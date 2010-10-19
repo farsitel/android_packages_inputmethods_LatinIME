@@ -125,6 +125,8 @@
     <string name="alternates_for_c">ç</string>
     <!-- Accented forms of "y" -->
     <string name="alternates_for_y">ýÿ</string>
+
+    <string name="alternates_for_gaf">؛"</string>
     
     <!-- Tip to long press on keys -->
     <string name="tip_long_press">Hold a key down to see accents (ø, ö, etc.)</string>
