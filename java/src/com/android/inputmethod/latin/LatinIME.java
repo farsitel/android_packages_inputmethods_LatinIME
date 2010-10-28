@@ -1711,6 +1711,7 @@ public class LatinIME extends InputMethodService
         initSuggest(mLanguageSwitcher.getInputLanguage());
         mLanguageSwitcher.persist();
         updateShiftKeyState(getCurrentInputEditorInfo());
+        ((LatinKeyboard) mInputView.getKeyboard()).updateF1Key();
     }
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
