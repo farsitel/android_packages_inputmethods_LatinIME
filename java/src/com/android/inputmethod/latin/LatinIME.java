@@ -42,6 +42,7 @@ import android.preference.PreferenceManager;
 import android.speech.SpeechRecognizer;
 import android.text.AutoText;
 import android.text.ClipboardManager;
+import android.text.FriBidi;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.PrintWriterPrinter;
@@ -829,6 +830,8 @@ public class LatinIME extends InputMethodService
     }
 
     private int getCursorCapsMode(InputConnection ic, EditorInfo attr) {
+        if (mLanguageSwitcher != null && FriBidi.isPersian(mLanguageSwitcher.getInputLocale()))
+            return 0;
         int caps = 0;
         EditorInfo ei = getCurrentInputEditorInfo();
         if (mAutoCap && ei != null && ei.inputType != EditorInfo.TYPE_NULL) {
@@ -1115,6 +1118,7 @@ public class LatinIME extends InputMethodService
                 return;
             }
             primaryCode = new String(keyCodes, 0, 1).toUpperCase().charAt(0);
+            primaryCode = Persian.sShiftTable.get(primaryCode, primaryCode);
         }
         if (mPredicting) {
             if (mInputView.isShifted() && mComposing.length() == 0) {

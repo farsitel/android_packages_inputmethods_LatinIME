@@ -86,7 +86,7 @@ public class LatinKeyboard extends Keyboard {
     private int mPrefLetterY;
     private int mPrefDistance;
 
-    private int mExtensionResId; 
+    private LatinKeyboard mExtension = null;
     
     private static final int SHIFT_OFF = 0;
     private static final int SHIFT_ON = 1;
@@ -278,12 +278,12 @@ public class LatinKeyboard extends Keyboard {
         }
     }
 
-    public void setExtension(int resId) {
-        mExtensionResId = resId;
+    public void setExtension(int resId, Context c) {
+        mExtension = new LatinKeyboard(c, resId);
     }
 
-    public int getExtension() {
-        return mExtensionResId;
+    public LatinKeyboard getExtension() {
+        return mExtension;
     }
 
     private void setDefaultBounds(Drawable drawable) {
