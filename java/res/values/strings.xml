@@ -329,5 +329,5 @@
     <string name="has_dictionary">Dictionary available</string>
 
     <!-- Set to empty if you want it to be same as the selectd local of os -->
-    <string name="default_selected_languages"></string>
+    <string name="default_selected_languages">en_US,fa_IR</string>
 </resources>
