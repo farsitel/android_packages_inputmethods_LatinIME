@@ -327,4 +327,7 @@
     
     <!-- Inform the user that a particular language has an available dictionary -->
     <string name="has_dictionary">Dictionary available</string>
+
+    <!-- Set to empty if you want it to be same as the selectd local of os -->
+    <string name="default_selected_languages"></string>
 </resources>

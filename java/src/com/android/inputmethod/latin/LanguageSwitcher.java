@@ -18,6 +18,7 @@ package com.android.inputmethod.latin;
 
 import java.util.Locale;
 
+import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
@@ -56,9 +57,11 @@ public class LanguageSwitcher {
      * @param sp
      * @return whether there was any change
      */
-    public boolean loadLocales(SharedPreferences sp) {
+    public boolean loadLocales(SharedPreferences sp, Resources resources) {
         String selectedLanguages = sp.getString(LatinIME.PREF_SELECTED_LANGUAGES, null);
         String currentLanguage   = sp.getString(LatinIME.PREF_INPUT_LANGUAGE, null);
+        if (selectedLanguages == null || selectedLanguages.length() < 1)
+            selectedLanguages = resources.getString(R.string.default_selected_languages);
         if (selectedLanguages == null || selectedLanguages.length() < 1) {
             loadDefaults();
             if (mLocales.length == 0) {

@@ -280,7 +280,7 @@ public class LatinIME extends InputMethodService
         final Configuration conf = mResources.getConfiguration();
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         mLanguageSwitcher = new LanguageSwitcher(this);
-        mLanguageSwitcher.loadLocales(prefs);
+        mLanguageSwitcher.loadLocales(prefs, mResources);
         mKeyboardSwitcher = new KeyboardSwitcher(this, this);
         mKeyboardSwitcher.setLanguageSwitcher(mLanguageSwitcher);
         mSystemLocale = conf.locale.toString();
@@ -369,7 +369,7 @@ public class LatinIME extends InputMethodService
             mSystemLocale = systemLocale;
             if (mLanguageSwitcher != null) {
                 mLanguageSwitcher.loadLocales(
-                        PreferenceManager.getDefaultSharedPreferences(this));
+                        PreferenceManager.getDefaultSharedPreferences(this), mResources);
                 mLanguageSwitcher.setSystemLocale(conf.locale);
                 toggleLanguage(true, true);
             } else {
@@ -1112,7 +1112,7 @@ public class LatinIME extends InputMethodService
             }
         }
         if (mInputView.isShifted()) {
-            // TODO: This doesn't work with ß, need to fix it in the next release.
+            // TODO: This doesn't work with beta, need to fix it in the next release.
             if (keyCodes == null || keyCodes[0] < Character.MIN_CODE_POINT
                     || keyCodes[0] > Character.MAX_CODE_POINT) {
                 return;
@@ -1715,13 +1715,17 @@ public class LatinIME extends InputMethodService
         initSuggest(mLanguageSwitcher.getInputLanguage());
         mLanguageSwitcher.persist();
         updateShiftKeyState(getCurrentInputEditorInfo());
-        ((LatinKeyboard) mInputView.getKeyboard()).updateF1Key();
+        if (mInputView != null) {
+            Keyboard k = mInputView.getKeyboard();
+            if (k != null)
+                ((LatinKeyboard) k).updateF1Key();
+        }
     }
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
             String key) {
         if (PREF_SELECTED_LANGUAGES.equals(key)) {
-            mLanguageSwitcher.loadLocales(sharedPreferences);
+            mLanguageSwitcher.loadLocales(sharedPreferences, mResources);
             mRefreshKeyboardRequired = true;
         }
     }
@@ -1934,7 +1938,7 @@ public class LatinIME extends InputMethodService
                 mResources.getBoolean(R.bool.enable_autocorrect)) & mShowSuggestions;
         updateCorrectionMode();
         updateAutoTextEnabled(mResources.getConfiguration().locale);
-        mLanguageSwitcher.loadLocales(sp);
+        mLanguageSwitcher.loadLocales(sp, mResources);
     }
 
     private void initSuggestPuncList() {
