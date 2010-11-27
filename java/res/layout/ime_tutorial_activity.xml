@@ -17,9 +17,6 @@
                 <View android:layout_width="fill_parent" android:layout_height="40.0dip" />
             </LinearLayout>
         </ScrollView>
-        <RelativeLayout android:id="@+id/help_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <ImageView android:id="@+id/hand_image_view" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hand_anim" android:layout_alignParentRight="true" />
-        </RelativeLayout>
     </FrameLayout>
     <RelativeLayout android:background="@android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <Button android:id="@+id/back_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/back_button_label" android:drawableLeft="@drawable/ic_btn_back" android:drawablePadding="3.0dip" android:layout_alignParentLeft="true" />
