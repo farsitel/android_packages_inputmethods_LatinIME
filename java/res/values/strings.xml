@@ -330,4 +330,13 @@
 
     <!-- Set to empty if you want it to be same as the selectd local of os -->
     <string name="default_selected_languages">en_US,fa_IR</string>
+
+    <!-- LatinImeTutorial begins -->
+    <string name="default_device_name">Android</string>
+    <string name="next_button_label">Next</string>
+    <string name="back_button_label">Back</string>
+    <string name="skip_button_label">Skip</string>
+    <string name="done_button_label">Done</string>
+    <string name="keyboard_tutorial_title">Using the onscreen keyboard</string>
+    <!-- LatinImeTutorial ends -->
 </resources>
