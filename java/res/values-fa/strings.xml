@@ -241,13 +241,16 @@
 
     <!-- IME Tutorial screen (ROMAN) --><skip />
     <!-- appears above image showing the user to click on a TextView to show the IME -->
-    <string name="open_the_keyboard"><font size="17"><b>صفحه‌کلید را باز کنید.\n</b></font><font size="3">\n</font>یک فیلد متن را انتخاب کنید.</string>
+    <string name="open_the_keyboard"><font size="17"><b>باز کردن صفحه‌کلید\n</b></font><font size="3">\n</font>یک فیلد متن را انتخاب کنید.</string>
 
     <!-- appears above the image showing the back button used to close the keyboard -->
-    <string name="close_the_keyboard"><font size="17"><b>صفحه‌کلید را ببندید.\n</b></font><font size="3">\n</font>کلید «بازگشت» را فشار دهید.</string>
+    <string name="close_the_keyboard"><font size="17"><b>بستن صفحه‌کلید\n</b></font><font size="3">\n</font>کلید «بازگشت» را فشار دهید.</string>
+
+    <!-- appears above the image showing how to change the keyboard language -->
+    <string name="change_the_language"><font size="17"><b>تغییر زبان صفحه‌کلید\n</b></font><font size="3">\n</font>انگشت خود را بر روی دکمهٔ «فاصله» به چپ یا راست بکشید.</string>
 
     <!-- appears above image showing how to use touch and hold -->
-    <string name="touch_and_hold"><font size="17"><b>برای نمایش گزینه‌ها انگشت خود را بر روی یک کلید نگه دارید.\n</b></font><font size="3">\n</font>حروف مشابه و علامت‌ها، نمایش داده می‌شود.</string>
+    <string name="touch_and_hold"><font size="17"><b>افزودن حروف دیگر و علامت‌ها\n</b></font><font size="3">\n</font>انگشت خود را بر روی یک کلید بگذارید و نگه دارید.</string>
 
     <!-- appears above image showing how to access keyboard settings -->
     <string name="keyboard_settings"><font size="17"><b>تنظیمات صفحه‌کلید\n</b></font><font size="3">\n</font>انگشت خود را بر روی <b>\۱۲۳؟\</b> قرار دهید و نگه دارید.</string>
