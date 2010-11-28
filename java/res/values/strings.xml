@@ -297,6 +297,9 @@
     <!-- appears above the image showing the back button used to close the keyboard -->
     <string name="close_the_keyboard"><font size="17"><b>Close the keyboard\n</b></font><font size="3">\n</font>Press the Back key.</string>
 
+    <!-- appears above the image showing how to change the keyboard language -->
+    <string name="change_the_language"><font size="17"><b>Change the Language\n</b></font><font size="3">\n</font>Swing your finger over the Space button to right or left.</string>
+
     <!-- appears above image showing how to use touch and hold -->
     <string name="touch_and_hold"><font size="17"><b>Touch \u0026 hold a key for options\n</b></font><font size="3">\n</font>Access punctuation and accents.</string>
 
