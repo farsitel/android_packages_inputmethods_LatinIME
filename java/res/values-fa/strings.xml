@@ -19,126 +19,124 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title for Latin keyboard  -->
-    <string name="english_ime_name">Android keyboard</string>
+    <string name="english_ime_name">صفحه‌کلید اندروید</string>
     <!-- Title for Latin keyboard settings activity / dialog -->
-    <string name="english_ime_settings">Android keyboard settings</string>
+    <string name="english_ime_settings">تنظیمات صفحه‌کلید اندروید</string>
 
     <!-- Option to provide vibrate/haptic feedback on keypress -->
-    <string name="vibrate_on_keypress">Vibrate on keypress</string>
+    <string name="vibrate_on_keypress">بازخورد لرزشی در هنگام تایپ</string>
     <!-- Option to play back sound on keypress in soft keyboard -->
-    <string name="sound_on_keypress">Sound on keypress</string>
+    <string name="sound_on_keypress">بازخورد صوتی در هنگام تایپ</string>
     
     <!-- Option to enable using nearby keys when correcting/predicting -->
-    <string name="hit_correction">Correct typing errors</string>
+    <string name="hit_correction">تصحیح غلط‌های تایپی</string>
     
     <!-- Description for hit_correction  -->
-    <string name="hit_correction_summary">Enable input error correction</string>
+    <string name="hit_correction_summary">فعال کردن تصحیح غلط‌های تایپی</string>
     
     <!-- Option to enable using nearby keys when correcting/predicting in landscape-->
-    <string name="hit_correction_land">Landscape input errors</string>
+    <string name="hit_correction_land">تصحیح غلط‌های تایپی در حالت افقی</string>
     
     <!-- Description for hit_correction in landscape -->
-    <string name="hit_correction_land_summary">Enable input error correction</string>
+    <string name="hit_correction_land_summary">فعال کردن تصحیح غلط‌های تایپی در حالت افقی</string>
     
     <!-- Option to automatically correct word on hitting space -->
-    <string name="auto_correction">Word suggestions</string> 
+    <string name="auto_correction">کلمات پیشنهادی</string> 
     
     <!-- Description for auto_correction -->
-    <string name="auto_correction_summary">Automatically correct the previous word</string>
+    <string name="auto_correction_summary">تصحیح خودکار کلمهٔ قبلی</string>
 	
     <!-- Option to enable text prediction -->
-    <string name="prediction">Word suggestions</string>
+    <string name="prediction">کلمات پیشنهادی</string>
     <!-- Category title for text prediction -->
-    <string name="prediction_category">Word suggestion settings</string>
+    <string name="prediction_category">تنظیمات کلمهٔ پیشنهادی</string>
     <!-- Description for text prediction -->
-    <string name="prediction_summary">Enable auto completion while typing</string>
+    <string name="prediction_summary">فعال کردن تکمیل خودکار کلمات در هنگام تایپ</string>
 	
     <!-- Dialog title for auto complete choices -->
-    <string name="auto_complete_dialog_title">Auto completion</string>
+    <string name="auto_complete_dialog_title">تکمیل خودکار</string>
     
     <!-- Option to enable text prediction in landscape -->
-    <string name="prediction_landscape">Increase text field size</string> 
+    <string name="prediction_landscape">افزایش فضای نوشتن</string>
     <!-- Description for text prediction -->
-    <string name="prediction_landscape_summary">Hide word suggestions in landscape view</string>
+    <string name="prediction_landscape_summary">پنهان کردن کلمات پیشنهادی در حالت افقی</string>
 	
     <!-- Option to enable auto capitalization of sentences -->
-    <string name="auto_cap">Auto-capitalization</string> 
+    <string name="auto_cap">بزرگ نوشتن حرف اول جملات</string> 
     <!-- Description for auto cap -->
-    <string name="auto_cap_summary">Capitalize the start of a sentence</string>
+    <string name="auto_cap_summary">هر جمله به صورت خودکار با حرف بزرگ نوشته شود.</string>
     <!-- Option to enable auto punctuate -->
-    <string name="auto_punctuate">Auto-punctuate</string> 
+    <string name="auto_punctuate">نشانه‌گذاری خودکار</string> 
     <!-- Description for auto punctuate -->
     <string name="auto_punctuate_summary"></string>
     
     <!-- Option to enable quick fixes -->
-    <string name="quick_fixes">Quick fixes</string>
+    <string name="quick_fixes">تصحیح غلط‌های تایپی رایج</string>
     <!-- Description for quick fixes -->
-    <string name="quick_fixes_summary">Corrects commonly typed mistakes</string>
+    <string name="quick_fixes_summary"> </string>
     
     <!-- Option to enable showing suggestions -->
-    <string name="show_suggestions">Show suggestions</string>
+    <string name="show_suggestions">نمایش پیشنهادها</string>
     <!-- Description for show suggestions -->
-    <string name="show_suggestions_summary">Display suggested words while typing</string>
+    <string name="show_suggestions_summary">در هنگام تایپ، کلمات پیشنهادی نشان داده شود.</string>
     
     <!-- Option to enable auto completion -->
-    <string name="auto_complete">Auto-complete</string>
+    <string name="auto_complete">تکمیل خودکار</string>
     <!-- Description for auto completion -->
-    <string name="auto_complete_summary">Spacebar and punctuation automatically insert highlighted word</string>
+    <string name="auto_complete_summary">کلیدهای فاصله یا علامت‌ها، اولین کلمهٔ پیشنهادی را وارد می‌کند.</string>
     
     <!-- Array of prediction modes -->
     <string-array name="prediction_modes">
-        <item>None</item>
-        <item>Basic</item>
-        <item>Advanced</item>
+        <item>هیچ کدام</item>
+        <item>ساده</item>
+        <item>پیشرفته</item>
     </string-array>
     
     <!-- Indicates that a word has been added to the dictionary -->
-    <string name="added_word"><xliff:g id="word">%s</xliff:g> : Saved</string>
+    <string name="added_word"><xliff:g id="word">‏%s</xliff:g> : ذخیره شد.</string>
 
     <!-- Tip to long press on keys -->
-    <string name="tip_long_press">Hold a key down to see accents (ø, ö, etc.)</string>
+    <string name="tip_long_press">برای مشاهدهٔ حروف مشابه، انگشت خود را بر روی کلید نگه دارید. (ø، ö و غیره)</string>
     <!-- Tip to dismiss keyboard -->
-    <string name="tip_dismiss">Press the back key \u21B6 to close the keyboard at any point</string>
+    <string name="tip_dismiss">هر وقت خواستید صفحه‌کلید را ببندید، کلید بازگشت \u21B6 را فشار دهید.</string>
     <!-- Tip to press ?123 to access numbers and symbols -->
-    <string name="tip_access_symbols">Access numbers and symbols</string>    
+    <string name="tip_access_symbols">دسترسی به اعداد و نشانه‌ها</string>
     <!-- Tip to long press on typed word to add to dictionary -->
-    <string name="tip_add_to_dictionary">Press and hold the left-most word to add it to the dictionary
-        </string>
+    <string name="tip_add_to_dictionary">با قرار دادن انگشت خود بر روی سمت چپ‌ترین کلمه و نگه داشتن آن، کلمه به فرهنگ لغت افزوده می‌شود.</string>
         
     <!-- Instruction to touch the bubble to continue -->
-    <string name="touch_to_continue">Touch this hint to continue »</string>
+    <string name="touch_to_continue">برای ادامه، این راهنمایی را انتخاب کنید. »</string>
     
     <!-- Instruction to touch the bubble to start typing -->
-    <string name="touch_to_finish">Touch here to close this hint and start typing!</string>
+    <string name="touch_to_finish">برای بستن این راهنمایی و تایپ کردن اینجا را انتخاب کنید!</string>
     
     <!-- Tutorial tip 1 - The keyboard opens any time you touch a text field -->
-    <string name="tip_to_open_keyboard"><b>The keyboard opens any time you touch a text field</b></string>
+    <string name="tip_to_open_keyboard"><b>هر وقت یک مکان مخصوص تایپ را انتخاب کنید، صفحه‌کلید باز خواهد شد.</b></string>
     
     <!-- Tutorial tip 2 - Touch and hold a key to view accents (examples) -->
-    <string name="tip_to_view_accents"><b>Touch &amp; hold a key to view accents\n(ø, ö, ô, ó, and so on)</b>
-    </string>
+    <string name="tip_to_view_accents"><b>برای مشاهدهٔ حروف مشابه (ø، ö، ô، ó و غیره.)، انگشت خود را بر روی کلید قرار داده و نگه دارید. </b></string>
     
     <!-- Tutorial tip 3 - How to switch to number/symbol keyboard -->
-    <string name="tip_to_open_symbols"><b>Switch to numbers and symbols by touching this key</b></string>
+    <string name="tip_to_open_symbols"><b>با انتخاب این کلید، صفحه‌کلید در حالت اعداد و نشانه‌ها قرار خواهد گرفت.</b></string>
     
     <!-- Tutorial tip 4 - How to switch back to alphabet keyboard -->
-    <string name="tip_to_close_symbols"><b>Go back to letters by touching this key again</b></string>
+    <string name="tip_to_close_symbols"><b>برای بازگرداندن صفحه‌کلید به حالت حروف، این کلید را دوباره انتخاب کنید.</b></string>
     
     <!-- Tutorial tip 5 - How to launch keyboard settings -->
-    <string name="tip_to_launch_settings"><b>Touch &amp; hold this key to change keyboard settings, like auto complete</b></string>
+    <string name="tip_to_launch_settings"><b>با قرار دادن انگشت خود بر روی این کلید و نگه داشتن آن، می‌توانید تنظیمات صفحه‌کلید را عوض کنید.</b></string>
     
     <!-- Tutorial tip 6 - Done with the tutorial -->
-    <string name="tip_to_start_typing"><b>Try it!</b></string>
+    <string name="tip_to_start_typing"><b>تمرین کنید!</b></string>
     
     
     <!-- Label for soft enter key when it performs GO action.  Must be short to fit on key! -->
-    <string name="label_go_key">Go</string>
+    <string name="label_go_key">برو</string>
     <!-- Label for soft enter key when it performs NEXT action.  Must be short to fit on key! -->
-    <string name="label_next_key">Next</string>
+    <string name="label_next_key">بعدی</string>
     <!-- Label for soft enter key when it performs DONE action.  Must be short to fit on key! -->
-    <string name="label_done_key">Done</string>
+    <string name="label_done_key">تمام</string>
     <!-- Label for soft enter key when it performs SEND action.  Must be short to fit on key! -->
-    <string name="label_send_key">Send</string>
+    <string name="label_send_key">ارسال</string>
     <!-- Label for "switch to symbols" key.  Must be short to fit on key! -->
     <string name="label_symbol_key">۱۲۳×</string>
     <!-- Label for "switch to numeric" key.  Must be short to fit on key! -->
@@ -146,113 +144,113 @@
     <!-- Label for "switch to alphabetic" key.  Must be short to fit on key! -->
     <string name="label_alpha_key">الفبا</string>
     <!-- Label for ALT modifier key.  Must be short to fit on key! -->
-    <string name="label_alt_key">دگر</string>
+    <string name="label_alt_key">شیفت</string>
 
     <!-- Voice related labels -->
 
     <!-- Title of the warning dialog that shows when a user initiates voice input for
          the first time. -->
-    <string name="voice_warning_title">Voice input</string>
+    <string name="voice_warning_title">گفتار به متن</string>
     
     <!-- Message that gets put at the top of the warning dialog if the user is attempting to use
          voice input in a currently unsupported locale. Voice input will work for such a user,
          but it will only recognize them in English. -->
-    <string name="voice_warning_locale_not_supported">Voice input is not currently supported for your language, but does work in English.</string>
+    <string name="voice_warning_locale_not_supported">«گفتار به متن» فعلاً برای زبان شما کار نمی‌کند، اما برای زبان انگلیسی کار می‌کند.</string>
     
     <!-- Message of the warning dialog that shows when a user initiates voice input for
          the first time, or turns it on in settings. -->
-    <string name="voice_warning_may_not_understand">Voice input is an experimental feature using Google\'s networked speech recognition.</string>
+    <string name="voice_warning_may_not_understand">«گفتار به متن» یک نرم‌افزار آزمایشی است که از سرورهای تشخیص صدای گوگل استفاده می‌کند.</string>
     
     <!-- An additional part of the warning dialog for voice input that only shows when the user
          actually initiates voice input, rather than just turning it on in settings. -->
-    <string name="voice_warning_how_to_turn_off">To turn off voice input, go to keyboard settings.</string>
+    <string name="voice_warning_how_to_turn_off">می‌توانید «گفتار به متن» را در تنظیمات صفحه‌کلید غیرفعال کنید.</string>
     
     <!-- Message to show when user clicks the swiping hint (which says
         "Swipe across keyboard to speak"). Also shown when enabling settings. -->
-    <string name="voice_hint_dialog_message">To use voice input, press the microphone button or slide your finger across the on-screen keyboard.</string>
+    <string name="voice_hint_dialog_message">برای استفاده از «گفتار به متن»، یا کلید میکروفن را فشار دهید یا انگشت خود را بر روی تمام صفحه‌کلید حرکت دهید.</string>
     
     <!-- Short message to tell the user the system is ready for them to speak. -->
-    <string name="voice_listening">Speak now</string>
+    <string name="voice_listening">بگو</string>
 
     <!-- Short message shown after the user finishes speaking. -->
-    <string name="voice_working">Working</string>
+    <string name="voice_working">چند لحظه\u2026</string>
 
     <!-- Short message shown before the user should speak. -->
     <string name="voice_initializing"></string>
 
     <!-- Short message shown when a generic error occurs. -->
-    <string name="voice_error">Error. Please try again.</string>
+    <string name="voice_error">خطا. دوباره امتحان کنید.</string>
 
     <!-- Short message shown for a network error. -->
-    <string name="voice_network_error">Couldn\'t connect</string>
+    <string name="voice_network_error">اتصال برقرار نمی‌شود.</string>
     
     <!-- Short message shown for a network error where the utterance was really long,
          in which case we should suggest that the user speak less. -->
-    <string name="voice_too_much_speech">Error, too much speech.</string>
+    <string name="voice_too_much_speech">خطا! باید کوتاه‌تر صحبت کنید.</string>
 
     <!-- Short message shown for an audio error. -->
-    <string name="voice_audio_error">Audio problem</string>
+    <string name="voice_audio_error">خطای صدا</string>
 
     <!-- Short message shown for an error with the voice server. -->
-    <string name="voice_server_error">Server error</string>
+    <string name="voice_server_error">خطای سرور</string>
 
     <!-- Short message shown when no speech is heard. -->
-    <string name="voice_speech_timeout">No speech heard</string>
+    <string name="voice_speech_timeout">چیزی شنیده نشد.</string>
 
     <!-- Short message shown when the server couldn't parse any speech. -->
-    <string name="voice_no_match">No matches found</string>
+    <string name="voice_no_match">موردی پیدا نشد.</string>
 
     <!-- Short message shown when the user initiates voice and voice
 	search is not installed. -->
-    <string name="voice_not_installed">Voice search not installed</string>
+    <string name="voice_not_installed">جستجوی صوتی نصب نشده است.</string>
 
     <!-- Short hint shown in candidate view to explain voice input. -->
-    <string name="voice_swipe_hint"><b>Hint:</b> Swipe across keyboard to speak</string>
+    <string name="voice_swipe_hint"><b>راهنمایی:</b> برای صحبت کردن، انگشت خود را بر روی تمام صفحه‌کلید حرکت دهید.</string>
 
     <!-- Short hint shown in candidate view to explain that user can speak punctuation. -->
-    <string name="voice_punctuation_hint"><b>Hint:</b> Next time, try speaking punctuation like \"period\", \"comma\", or \"question mark\".</string>
+    <string name="voice_punctuation_hint"><b>راهنمایی:</b> مواردی نظیر «نقطه»، «ویرگول» یا «علامت سؤال» را نیز بگویید.</string>
 
     <!-- Label on button to stop recognition. Must be short to fit on button. -->
-    <string name="cancel">Cancel</string>
+    <string name="cancel">بی‌خیال</string>
 
     <!-- Label on button when an error occurs -->
-    <string name="ok">OK</string>
+    <string name="ok">خُب</string>
 
     <!-- Preferences item for enabling speech input -->
-    <string name="voice_input">Voice input</string>
+    <string name="voice_input">گفتار به متن</string>
 
     <!-- Array of Voice Input modes -->
     <string-array name="voice_input_modes">
-        <item>On main keyboard</item>
-        <item>On symbols keyboard</item>
-        <item>Off</item>
+        <item>در صفحه‌کلید اصلی، فعال</item>
+        <item>در صفحه‌کلید نمادها، فعال</item>
+        <item>غیرفعال</item>
     </string-array>
 
     <!-- Array of Voice Input modes summary -->
     <string-array name="voice_input_modes_summary">
-        <item>Mic on main keyboard</item>
-        <item>Mic on symbols keyboard</item>
-        <item>Voice input is disabled</item>
+        <item>میکروفن در صفحه‌کلید اصلی</item>
+        <item>میکروفن در صفحه‌کلید نمادها</item>
+        <item>«گفتار به متن»، غیرفعال است.</item>
     </string-array>
 
     <!-- Press the "enter" key after the user speaks. Option on settings.-->
-    <string name="auto_submit">Auto submit after voice</string>
+    <string name="auto_submit">ارسال خودکار</string>
 
     <!-- Press the "enter" key after the user speaks. Summary of option in settings.-->
-    <string name="auto_submit_summary">Automatically press enter when searching or going to the next field.</string>
+    <string name="auto_submit_summary">با تمام شدن گفتار، خودکار ارسال شود.</string>
 
     <!-- IME Tutorial screen (ROMAN) --><skip />
     <!-- appears above image showing the user to click on a TextView to show the IME -->
-    <string name="open_the_keyboard"><font size="17"><b>Open the keyboard\n</b></font><font size="3">\n</font>Touch any text field.</string>
+    <string name="open_the_keyboard"><font size="17"><b>صفحه‌کلید را باز کنید.\n</b></font><font size="3">\n</font>یک فیلد متن را انتخاب کنید.</string>
 
     <!-- appears above the image showing the back button used to close the keyboard -->
-    <string name="close_the_keyboard"><font size="17"><b>Close the keyboard\n</b></font><font size="3">\n</font>Press the Back key.</string>
+    <string name="close_the_keyboard"><font size="17"><b>صفحه‌کلید را ببندید.\n</b></font><font size="3">\n</font>کلید «بازگشت» را فشار دهید.</string>
 
     <!-- appears above image showing how to use touch and hold -->
-    <string name="touch_and_hold"><font size="17"><b>Touch \u0026 hold a key for options\n</b></font><font size="3">\n</font>Access punctuation and accents.</string>
+    <string name="touch_and_hold"><font size="17"><b>برای نمایش گزینه‌ها انگشت خود را بر روی یک کلید نگه دارید.\n</b></font><font size="3">\n</font>حروف مشابه و علامت‌ها، نمایش داده می‌شود.</string>
 
     <!-- appears above image showing how to access keyboard settings -->
-    <string name="keyboard_settings"><font size="17"><b>Keyboard settings\n</b></font><font size="3">\n</font>Touch \u0026 hold the <b>\?123\</b> key.</string>
+    <string name="keyboard_settings"><font size="17"><b>تنظیمات صفحه‌کلید\n</b></font><font size="3">\n</font>انگشت خود را بر روی <b>\۱۲۳؟\</b> قرار دهید و نگه دارید.</string>
 
     <!-- popular web domains for the locale - most popular, displayed on the keyboard -->
     <string name="popular_domain_0">".com"</string>
@@ -266,18 +264,18 @@
     <string name="popular_domain_4">".ac.ir"</string>
 
     <!-- Menu item for launching Input method switcher -->
-    <string name="inputMethod">Input method</string>
+    <string name="inputMethod">ورود متن</string>
     
     <!-- Title for input language selection screen -->
-    <string name="language_selection_title">Input languages</string>
+    <string name="language_selection_title">زبان‌های نوشتن</string>
     <!-- Title summary for input language selection screen -->
-    <string name="language_selection_summary">Slide finger on spacebar to change language</string>
+    <string name="language_selection_summary">برای تغییر زبان، انگشت خود را بر روی کلید «فاصله» قرار داده و به سمت چپ یا راست حرکت دهید.</string>
     
     <!-- Add to dictionary hint -->
-    <string name="hint_add_to_dictionary">\u2190 Tap again to save</string>
+    <string name="hint_add_to_dictionary">\u2190 برای ذخیره کردن، دو بار پشت سر هم انتخاب کنید.</string>
     
     <!-- Inform the user that a particular language has an available dictionary -->
-    <string name="has_dictionary">Dictionary available</string>
+    <string name="has_dictionary">فرهنگ لغت وجود دارد.</string>
 
     <!-- Set to empty if you want it to be same as the selectd local of os -->
     <string name="default_selected_languages">en_US,fa_IR</string>
