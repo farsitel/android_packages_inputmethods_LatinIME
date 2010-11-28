@@ -282,4 +282,14 @@
 
     <!-- Set to empty if you want it to be same as the selectd local of os -->
     <string name="default_selected_languages">en_US,fa_IR</string>
+
+    <!-- LatinImeTutorial begins -->
+    <string name="default_device_name">فارسی‌تل</string>
+    <string name="next_button_label">بعدی</string>
+    <string name="back_button_label">قبلی</string>
+    <string name="skip_button_label">بعداً</string>
+    <string name="done_button_label">خُب</string>
+    <string name="keyboard_tutorial_title">استفاده از صفحه‌کلید مجازی</string>
+    <!-- LatinImeTutorial ends -->
+
 </resources>
