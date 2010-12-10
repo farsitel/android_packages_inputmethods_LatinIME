@@ -285,7 +285,7 @@
 
     <!-- LatinImeTutorial begins -->
     <string name="default_device_name">فارسی‌تل</string>
-    <string name="next_button_label">بعدی</string>
+    <string name="next_button_label">تمام</string>
     <string name="back_button_label">قبلی</string>
     <string name="skip_button_label">بعداً</string>
     <string name="done_button_label">خُب</string>
