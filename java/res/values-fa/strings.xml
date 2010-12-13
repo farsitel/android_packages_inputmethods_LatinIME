@@ -253,7 +253,7 @@
     <string name="touch_and_hold"><font size="17"><b>افزودن حروف دیگر و علامت‌ها\n</b></font><font size="3">\n</font>انگشت خود را بر روی یک کلید بگذارید و نگه دارید.</string>
 
     <!-- appears above image showing how to access keyboard settings -->
-    <string name="keyboard_settings"><font size="17"><b>تنظیمات صفحه‌کلید\n</b></font><font size="3">\n</font>انگشت خود را بر روی <b>\۱۲۳؟\</b> قرار دهید و نگه دارید.</string>
+    <string name="keyboard_settings"><font size="17"><b>تنظیمات صفحه‌کلید\n</b></font><font size="3">\n</font>انگشت خود را بر روی <b>۱۲۳×</b> قرار دهید و نگه دارید.</string>
 
     <!-- popular web domains for the locale - most popular, displayed on the keyboard -->
     <string name="popular_domain_0">".com"</string>

@@ -304,7 +304,7 @@
     <string name="touch_and_hold"><font size="17"><b>Touch \u0026 hold a key for options\n</b></font><font size="3">\n</font>Access punctuation and accents.</string>
 
     <!-- appears above image showing how to access keyboard settings -->
-    <string name="keyboard_settings"><font size="17"><b>Keyboard settings\n</b></font><font size="3">\n</font>Touch \u0026 hold the <b>\?123\</b> key.</string>
+    <string name="keyboard_settings"><font size="17"><b>Keyboard settings\n</b></font><font size="3">\n</font>Touch \u0026 hold the <b>\?123</b> key.</string>
 
     <!-- popular web domains for the locale - most popular, displayed on the keyboard -->
     <string name="popular_domain_0">".com"</string>
