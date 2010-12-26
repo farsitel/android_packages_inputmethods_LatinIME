@@ -18,13 +18,11 @@
 */
 -->
 <resources>
-    <color name="candidate_normal">#FF000000</color>
-    <color name="candidate_recommended">#FFE35900</color>
-    <color name="candidate_other">#ff808080</color>
-    <!-- LatinImeTutorial begins -->
-    <color name="error_message_foreground">#ffd7004a</color>
-    <color name="agreement_background">#80000000</color>
-    <color name="link_color">#ffffffff</color>
-    <color name="highlight_color">#ffff6500</color>
-    <!-- LatinImeTutorial ends -->
+    <!-- Whether or not auto-correction should be enabled by default -->
+    <bool name="enable_autocorrect">false</bool>
+    <!-- Whether this input method should be used as the default for a locale. Override it
+         for latin languages. -->
+    <!--bool name="im_is_default">false</bool-->
+    <!-- Whether or not voice input is enabled by default. -->
+    <bool name="voice_input_default">false</bool>
 </resources>

@@ -216,7 +216,7 @@ public class LatinKeyboardView extends KeyboardView {
         }
 
         // If we don't have an extension keyboard, don't go any further.
-        if (keyboard.getExtension() == 0) {
+        if (keyboard.getExtension() == null) {
             return super.onTouchEvent(me);
         }
         // If the motion event is above the keyboard and it's not an UP event coming
@@ -282,7 +282,7 @@ public class LatinKeyboardView extends KeyboardView {
         if (!isShown()) {
             return false;
         }
-        if (((LatinKeyboard) getKeyboard()).getExtension() == 0) return false;
+        if (((LatinKeyboard) getKeyboard()).getExtension() == null) return false;
         makePopupWindow();
         mExtensionVisible = true;
         return true;
@@ -301,9 +301,8 @@ public class LatinKeyboardView extends KeyboardView {
                     new ExtensionKeyboardListener(getOnKeyboardActionListener()));
             mExtension.setPopupParent(this);
             mExtension.setPopupOffset(0, -windowLocation[1]);
-            Keyboard keyboard;
-            mExtension.setKeyboard(keyboard = new LatinKeyboard(getContext(),
-                    ((LatinKeyboard) getKeyboard()).getExtension()));
+            Keyboard keyboard = ((LatinKeyboard) getKeyboard()).getExtension();
+            mExtension.setKeyboard(keyboard);
             mExtensionPopup.setContentView(mExtension);
             mExtensionPopup.setWidth(getWidth());
             mExtensionPopup.setHeight(keyboard.getHeight());
@@ -485,4 +484,18 @@ public class LatinKeyboardView extends KeyboardView {
             c.drawLine(0, mLastY, getWidth(), mLastY, mPaint);
         }
     }
+
+    protected CharSequence adjustCase(CharSequence label) {
+        if (mKeyboard.isShifted() && label != null) {
+            if (label.length() == 1) {
+                char code = (char) Persian.sShiftViewTable.get(label.charAt(0), label.charAt(0));
+                label = "" + code;
+            }
+            if (label.length() < 3 && Character.isLowerCase(label.charAt(0))) {
+                label = label.toString().toUpperCase();
+            }
+        }
+        return label;
+    }
+
 }

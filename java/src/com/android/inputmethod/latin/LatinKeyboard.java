@@ -34,6 +34,7 @@ import android.graphics.Paint.Align;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
+import android.text.FriBidi;
 import android.text.TextPaint;
 import android.util.Log;
 import android.view.ViewConfiguration;
@@ -85,7 +86,7 @@ public class LatinKeyboard extends Keyboard {
     private int mPrefLetterY;
     private int mPrefDistance;
 
-    private int mExtensionResId; 
+    private LatinKeyboard mExtension = null;
     
     private static final int SHIFT_OFF = 0;
     private static final int SHIFT_ON = 1;
@@ -277,12 +278,12 @@ public class LatinKeyboard extends Keyboard {
         }
     }
 
-    public void setExtension(int resId) {
-        mExtensionResId = resId;
+    public void setExtension(int resId, Context c) {
+        mExtension = new LatinKeyboard(c, resId);
     }
 
-    public int getExtension() {
-        return mExtensionResId;
+    public LatinKeyboard getExtension() {
+        return mExtension;
     }
 
     private void setDefaultBounds(Drawable drawable) {
@@ -295,7 +296,8 @@ public class LatinKeyboard extends Keyboard {
         updateF1Key();
     }
 
-    private void updateF1Key() {
+    /* package */
+    void updateF1Key() {
         if (mF1Key == null) return;
         if (m123Key != null && mIsAlphaKeyboard) {
             if (mVoiceEnabled && !mHasVoiceButton) {
@@ -315,8 +317,13 @@ public class LatinKeyboard extends Keyboard {
             mF1Key.icon = mMicIcon;
             mF1Key.iconPreview = mMicPreviewIcon;
         } else {
-            mF1Key.label = ",";
-            mF1Key.codes = new int[] { ',' };
+            if ((mLanguageSwitcher != null) && (FriBidi.isPersian(mLanguageSwitcher.getInputLocale()))) {
+                mF1Key.label = "\u060c";
+                mF1Key.codes = new int[] { '\u060c', ',' };
+            } else {
+                mF1Key.label = ",";
+                mF1Key.codes = new int[] { ',' };
+            }
             mF1Key.icon = null;
             mF1Key.iconPreview = null;
         }
@@ -440,6 +447,7 @@ public class LatinKeyboard extends Keyboard {
         if (mLocale != null && mLocale.equals(locale)) return;
         mLocale = locale;
         updateSpaceBarForLocale();
+        updateF1Key();
     }
 
     boolean isCurrentlyInSpace() {

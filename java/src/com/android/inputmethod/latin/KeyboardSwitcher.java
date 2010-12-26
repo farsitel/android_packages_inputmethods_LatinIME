@@ -220,7 +220,7 @@ public class KeyboardSwitcher {
                     || id.mKeyboardMode == KEYBOARDMODE_EMAIL
                     || id.mKeyboardMode == KEYBOARDMODE_WEB
                     ) {
-                keyboard.setExtension(R.xml.kbd_extension);
+                keyboard.setExtension(R.xml.kbd_extension, mContext);
             }
 
             if (id.mEnableShiftLock) {
